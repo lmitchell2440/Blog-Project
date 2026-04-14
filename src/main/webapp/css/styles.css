@@ -1,0 +1,37 @@
+@charset "UTF-8";
+body {
+	background-color: #DEDCD9;
+}
+
+.create-post {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+table {
+	width: 100%;
+}
+
+textarea {
+	vertical-align: top;
+	height: 20em;
+	width: 50em;
+}
+
+.submit {
+	width: 10em;
+	height: 2em;
+}
+
+.delete-col {
+	align-items: center;
+	justify-content: center;
+	width: 1em;
+}
+
+.return-home {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
