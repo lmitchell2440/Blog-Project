@@ -5,8 +5,8 @@ body {
 
 .create-post {
 	position: fixed;
-	top: 0;
-	right: 0;
+	top: 1em;
+	right: 1em;
 }
 
 table {
@@ -32,6 +32,6 @@ textarea {
 
 .return-home {
 	position: fixed;
-	bottom: 0;
-	right: 0;
+	bottom: 1em;
+	right: 1em;
 }
