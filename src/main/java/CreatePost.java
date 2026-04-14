@@ -56,7 +56,7 @@ public class CreatePost extends HttpServlet {
         out.println("<form method='post' action='CreatePost'>");
 
         out.println("Name: <input type='text' name='name' required/><br><br>");
-        out.println("Content: <textarea name='content' required></textarea><br><br>");
+        out.println("Content: <textarea name='content' class='content-field' required></textarea><br><br>");
         out.println("<input type='submit' class='submit' value='Submit'/>");
 
         out.println("</form>");

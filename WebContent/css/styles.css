@@ -2,3 +2,33 @@
 body {
 	background-color: #E0DACE;
 }
+
+.delete-col {
+	width: 1em;
+}
+
+table {
+	width: 100%;
+}
+
+.create-post {
+	position: fixed;
+	right: 1;
+	top: 1;
+}
+
+.return-home {
+	position: fixed;
+	right: 1;
+	bottom: 1;
+}
+
+.content-field {
+	width: 15em;
+	width: 5em;
+}
+
+.submit {
+	height: 1em;
+	width: 2em;
+}

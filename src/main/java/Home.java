@@ -65,7 +65,7 @@ public class Home extends HttpServlet {
                 out.println("<td class='delete-col'>");
                 out.println("<form method='post' action='DeletePost' style='display:inline;'>");
                 out.println("<input type='hidden' name='id' value='" + id + "'/>");
-                out.println("<input type='image' src='" + contextPath + "/images/delete-icon.png' alt='Delete' width='20' height='20'/>");
+                out.println("<input type='image' class='delete-col' src='" + contextPath + "/images/delete-icon.svg' alt='Delete' width='20' height='20'/>");
                 out.println("</form>");
                 out.println("</td>");
                 out.println("</tr>");
