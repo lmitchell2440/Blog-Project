@@ -16,8 +16,8 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '25'   # match your Azure setting
+          distribution: temurin
+          java-version: '17'
 
       - name: Build WAR
         run: mvn clean package
@@ -25,6 +25,6 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'MitchellBlogProject - Web Deploy'
+          app-name: 'MitchellBlogProject'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
           package: target/*.war
