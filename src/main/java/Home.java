@@ -1,8 +1,14 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.*;
-import java.io.*;
-import java.sql.*;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/Home")
 public class Home extends HttpServlet {
@@ -65,7 +71,7 @@ public class Home extends HttpServlet {
                 out.println("<td class='delete-col'>");
                 out.println("<form method='post' action='DeletePost' style='display:inline;'>");
                 out.println("<input type='hidden' name='id' value='" + id + "'/>");
-                out.println("<input type='image' class='delete-col' src='" + contextPath + "/images/delete-icon.png' alt='Delete' width='20' height='20'/>");
+                out.println("<input type='image' src='" + contextPath + "/images/delete-icon.png' alt='Delete' width='20' height='20'/>");
                 out.println("</form>");
                 out.println("</td>");
                 out.println("</tr>");
