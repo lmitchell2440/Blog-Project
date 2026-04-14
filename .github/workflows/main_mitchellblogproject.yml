@@ -22,9 +22,9 @@ jobs:
       - name: Build WAR
         run: mvn clean package
 
-      - name: Deploy to Azure
-        uses: azure/webapps-deploy@v2
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
         with:
-          app-name: YOUR_APP_NAME
+          app-name: 'NameBlogProject'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
           package: target/*.war
