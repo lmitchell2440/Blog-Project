@@ -7,6 +7,6 @@ import java.io.*;
 public class Default extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
-        response.sendRedirect("BlogList");
+        response.sendRedirect("Home");
     }
 }
